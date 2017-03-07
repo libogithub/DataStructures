@@ -1,5 +1,8 @@
 package com.libo.array;
 
+/**
+ * 数组基本操作
+ */
 public class HighArray {
 
 	private long[] a ;
