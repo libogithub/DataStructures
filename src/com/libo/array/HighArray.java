@@ -1,7 +1,7 @@
 package com.libo.array;
 
 /**
- * 数组基本操作
+ * 娣诲姞娉ㄩ噴
  */
 public class HighArray {
 
