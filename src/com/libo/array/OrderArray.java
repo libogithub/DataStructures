@@ -2,13 +2,13 @@ package com.libo.array;
 
 
 /**
- * ÓĞĞòÊı×éµÄÓÅµãµÄÈ±µã
- * ÓÅµã£º²éÕÒËÙ¶È±ÈÎŞË³ĞòÊı×éÒª¿ìºÜ¶à
- * È±µã£ººÍÆÕÍ¨Êı×éÒ»Ñù²åÈë²Ù×÷ĞèÒªÒÆ¶¯ËùÓĞºóÃæµÄÊı¾İÀ´ÌÚ³ö´æ´¢¿Õ¼ä 
+ * æœ‰åºæ•°ç»„çš„ä¼˜ç‚¹çš„ç¼ºç‚¹
+ * ä¼˜ç‚¹ï¼šæŸ¥æ‰¾é€Ÿåº¦æ¯”æ— é¡ºåºæ•°ç»„è¦å¿«å¾ˆå¤š
+ * ç¼ºç‚¹ï¼šå’Œæ™®é€šæ•°ç»„ä¸€æ ·æ’å…¥æ“ä½œéœ€è¦ç§»åŠ¨æ‰€æœ‰åé¢çš„æ•°æ®æ¥è…¾å‡ºå­˜å‚¨ç©ºé—´ 
  * 
- * ÓĞĞòÊı×éÔÚ²éÕÒ·Ç³£Æµ·±µÄÇé¿öÏÂºÜÓĞÓÃ£¬µ«ÈôÊÇ²åÈëºÍÉ¾³ıÆµ·±Ê±ÔòÎŞ·¨¸ßĞ§¹¤×÷¡£
+ * æœ‰åºæ•°ç»„åœ¨æŸ¥æ‰¾éå¸¸é¢‘ç¹çš„æƒ…å†µä¸‹å¾ˆæœ‰ç”¨ï¼Œä½†è‹¥æ˜¯æ’å…¥å’Œåˆ é™¤é¢‘ç¹æ—¶åˆ™æ— æ³•é«˜æ•ˆå·¥ä½œã€‚
  * 
- * ×¢ÒâÑ§Ï°¶ş·Ö²éÕÒËã·¨
+ * æ³¨æ„å­¦ä¹ äºŒåˆ†æŸ¥æ‰¾ç®—æ³•
  */
 public class OrderArray {
 
@@ -21,7 +21,7 @@ public class OrderArray {
 	}
 	
 	/**
-	 * Ê¹ÓÃ¶ş·Ö²éÕÒ·¨£¬²éÕÒÊı×éÖĞµÄÊı¾İ
+	 * ä½¿ç”¨äºŒåˆ†æŸ¥æ‰¾æ³•ï¼ŒæŸ¥æ‰¾æ•°ç»„ä¸­çš„æ•°æ®
 	 */
 	public int find(long searchKey){
 		int lowerBound = 0 ;
@@ -31,7 +31,7 @@ public class OrderArray {
 			curIndex = (lowerBound + upperBound) / 2 ;
 			if(a[curIndex] == searchKey){ 
 				return curIndex ;
-			}else if(lowerBound > upperBound){ //×îºóÒ»´Î±È½Ïlower»áµÈÓÚupper²¢ÇÒµÈÓÚcurindex,ÔÚ½øĞĞÒ»´ÎµÄ»°lower»á´óÓÚupper
+			}else if(lowerBound > upperBound){  //æœ€åä¸€æ¬¡æ¯”è¾ƒlowerä¼šç­‰äºupperå¹¶ä¸”ç­‰äºcurindex,åœ¨è¿›è¡Œä¸€æ¬¡çš„è¯lowerä¼šå¤§äºupper
 				return nElems ;	
 			}else{
 				if(a[curIndex] < searchKey ){
@@ -44,7 +44,7 @@ public class OrderArray {
 	}
 	
 	/**
-	 * ²åÈëÇ°ĞèÒªÅĞ¶ÏÊı×éÊÇ·ñÒÑ¾­Âú
+	 * æ’å…¥å‰éœ€è¦åˆ¤æ–­æ•°ç»„æ˜¯å¦å·²ç»æ»¡
 	 */
 	public void insert(long value){
 		int j ;
@@ -61,10 +61,10 @@ public class OrderArray {
 	}
 	
 	/**
-	 * ²åÈëÇ°ĞèÒªÅĞ¶ÏÊı×éÊÇ·ñÒÑ¾­Âú
+	 * æ’å…¥å‰éœ€è¦åˆ¤æ–­æ•°ç»„æ˜¯å¦å·²ç»æ»¡
 	 */
 	public boolean delete(long value){
-		int j = find(value); //×¢Òâ´Ë´¦
+		int j = find(value); //æ³¨æ„æ­¤å¤„
 		if(j == nElems){
 			return false ;
 		}else{
