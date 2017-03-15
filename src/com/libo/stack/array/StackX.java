@@ -38,7 +38,7 @@ public class StackX {
 		stack.push(40l);
 		stack.push(20l);
 		stack.push(90l);
-		stack.push(80l);
+		stack.push(800);
 		
 		while(!stack.isEmpty()){
 			System.out.print(stack.pop()+" ");
