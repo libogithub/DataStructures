@@ -79,7 +79,7 @@ public class SimpleSort {
 		simpleSort.insert(1);
 		simpleSort.insert(4);
 		simpleSort.insert(7);
-		simpleSort.insert(6);
+		simpleSort.insert(5);
 		
 		simpleSort.display();
 		System.out.println();
