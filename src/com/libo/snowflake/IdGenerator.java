@@ -104,9 +104,11 @@ public class IdGenerator {
 		for (int i = 0; i < 1000; i++) {
 			System.out.println(idWorker.nextId());
 		}
-		System.out.println(Long.toBinaryString(-1L << 5l));
-		System.out.println(Long.toBinaryString(-1L));
-		System.out.println((-1L ^ (-1L << 5l))+"");
+//		System.out.println(Long.toBinaryString(-1L << 7l)+"");
+//		System.out.println(Long.toBinaryString(-1L ^ (-1L << 7l))+"");
+//		System.out.println(Long.toBinaryString(127 & (-1L ^ (-1L << 7)))+"");
+//		System.out.println(Long.toBinaryString(-1L | (-1L << 7l))+"");
+//		System.out.println(Long.toBinaryString(128 & (-1L | (-1L << 7)))+"");
 	}
 
 }

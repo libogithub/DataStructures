@@ -32,7 +32,7 @@ public class OrderArray {
 			if(a[curIndex] == searchKey){ 
 				return curIndex ;
 			}else if(lowerBound > upperBound){  //最后一次比较lower会等于upper并且等于curindex,在进行一次的话lower会大于upper
-				return nElems ;	
+				return -1 ;	
 			}else{
 				if(a[curIndex] < searchKey ){
 					lowerBound = curIndex + 1;
@@ -92,10 +92,10 @@ public class OrderArray {
 		
 		orderArray.display();
 		
-		System.out.println("index "+orderArray.find(8));
+		System.out.println("index "+orderArray.find(9));
 		
 		
-		orderArray.delete(90);
+		//orderArray.delete(90);
 		
 		orderArray.display();
 	}
